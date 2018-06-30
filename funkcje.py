@@ -51,7 +51,7 @@ def RK_sprListaPionowa(listaList):
 	while(i<size and czy_zno):
 		suma=0
 		while(j<size):
-			suma=suma+macierz[j][i]		# kolejnosc [numer wiersza][numer kolumny]
+			suma=suma+listaList[j][i]		# kolejnosc [numer wiersza][numer kolumny]
 			j=j+1	# nie wiem czy dziala j++
 		if(suma-1>RK_epsilon):
 			czy_zno=0
@@ -67,7 +67,7 @@ def RK_sprListaPozioma(listaList):
 	while(i<size and czy_zno):
 		suma=0
 		while(j<size):
-			suma=suma+macierz[i][j]		# kolejnosc [numer wiersza][numer kolumny]
+			suma=suma+listaList[i][j]		# kolejnosc [numer wiersza][numer kolumny]
 			j=j+1	# nie wiem czy dziala j++
 		if(suma-1>RK_epsilon):
 			czy_zno=0
@@ -105,20 +105,20 @@ def random_matrix_of_matrix(n, N):
 		
 # Dominik
 def Normalizacja(MacierzLiczb, WymiarN, CzyWiersz: bool):
-	for Ix1 in range(0,WymiarN)	:			# dla każdego wrs/kol
-		if CzyWiersz : 
+	for Ix1 in range(0,WymiarN):			# dla każdego wrs/kol
+		if CzyWiersz: 
 			# Obliczanie sumy
 			Suma = sum(MacierzLiczb[Ix1])
 			# Dzielenie przez sumę
-			for Ix2 in range(0,WymiarN)	:		# dla każdego elementu
+			for Ix2 in range(0,WymiarN):		# dla każdego elementu
 				MacierzLiczb[Ix1][Ix2] /= Suma		
-		else :
+		else:
 			# Obliczanie sumy
 			Suma=0
-			for Ix2 in range(0,WymiarN) :
+			for Ix2 in range(0,WymiarN):
 				Suma+=MacierzLiczb[Ix1][Ix2]
 			# Dzielenie przez sumę
-			for Ix2 in range(0,WymiarN)	:		# dla każdego elementu
+			for Ix2 in range(0,WymiarN):		# dla każdego elementu
 				MacierzLiczb[Ix2][Ix1] /= Suma		
 				
 def WypiszWektorSum(MacierzLiczb, WymiarN, CzyWiersz: bool):
