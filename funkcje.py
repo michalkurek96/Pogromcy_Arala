@@ -101,3 +101,32 @@ def random_matrix_of_matrix(n, N):
             temp.append(small_matrix)
         matrix.append(temp)
         return matrix
+
+		
+# Dominik
+def Normalizacja(MacierzLiczb, WymiarN, CzyWiersz: bool):
+	for Ix1 in range(0,WymiarN)	:			# dla każdego wrs/kol
+		if CzyWiersz : 
+			# Obliczanie sumy
+			Suma = sum(MacierzLiczb[Ix1])
+			# Dzielenie przez sumę
+			for Ix2 in range(0,WymiarN)	:		# dla każdego elementu
+				MacierzLiczb[Ix1][Ix2] /= Suma		
+		else :
+			# Obliczanie sumy
+			Suma=0
+			for Ix2 in range(0,WymiarN) :
+				Suma+=MacierzLiczb[Ix1][Ix2]
+			# Dzielenie przez sumę
+			for Ix2 in range(0,WymiarN)	:		# dla każdego elementu
+				MacierzLiczb[Ix2][Ix1] /= Suma		
+				
+def WypiszWektorSum(MacierzLiczb, WymiarN, CzyWiersz: bool):
+	for Ix1 in range(0,WymiarN):
+		if CzyWiersz:
+			print(sum(MacierzLiczb[Ix1]))
+		else:
+			Suma=0
+			for Ix2 in range(0,WymiarN):
+				Suma+=MacierzLiczb[Ix1][Ix2]
+			print(Suma)
