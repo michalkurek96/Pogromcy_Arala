@@ -13,7 +13,7 @@ def RK_sprMacierzPionowa(macierz):
 		while(j<size):
 			suma=suma+macierz[j][i]		# kolejnosc [numer wiersza][numer kolumny]
 			j=j+1	# nie wiem czy dziala j++
-		if(suma-1>RK_epsilon)
+		if(suma-1>RK_epsilon):
 			czy_zno=0
 		i=i+1	# nie wiem czy dziala i++
 	return czy_zno
@@ -29,15 +29,15 @@ def RK_sprMacierzPozioma(macierz):
 		while(j<size):
 			suma=suma+macierz[i][j]		# kolejnosc [numer wiersza][numer kolumny]
 			j=j+1	# nie wiem czy dziala j++
-		if(suma-1>RK_epsilon)
+		if(suma-1>RK_epsilon):
 			czy_zno=0
 		i=i+1	# nie wiem czy dziala i++
 	return czy_zno
 
 # sprawdzenie dlugosci listy
-def RK_dlugoscListy(listaList)
+def RK_dlugoscListy(listaList):
 	i=0
-	for j in listaList
+	for j in listaList:
 		i=i+1
 	return i
 	
@@ -53,7 +53,7 @@ def RK_sprListaPionowa(listaList):
 		while(j<size):
 			suma=suma+macierz[j][i]		# kolejnosc [numer wiersza][numer kolumny]
 			j=j+1	# nie wiem czy dziala j++
-		if(suma-1>RK_epsilon)
+		if(suma-1>RK_epsilon):
 			czy_zno=0
 		i=i+1	# nie wiem czy dziala i++
 	return czy_zno
@@ -69,7 +69,7 @@ def RK_sprListaPozioma(listaList):
 		while(j<size):
 			suma=suma+macierz[i][j]		# kolejnosc [numer wiersza][numer kolumny]
 			j=j+1	# nie wiem czy dziala j++
-		if(suma-1>RK_epsilon)
+		if(suma-1>RK_epsilon):
 			czy_zno=0
 		i=i+1	# nie wiem czy dziala i++
 	return czy_zno
