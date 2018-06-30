@@ -7,8 +7,6 @@ def random_matrix_of_numbers(n):
         for j in range (n):
             temp.append(max_number*random.random())
         a.append(temp)
-    print("nasza macierz liczb:")
-    print(a)
 
 def random_matrix_of_matrix(n, N):
     max_number = 20
@@ -24,8 +22,4 @@ def random_matrix_of_matrix(n, N):
                 small_matrix.append(temp2)
             temp.append(small_matrix)
         matrix.append(temp)
-    print("nasza macierz macierzy:")
-    print(matrix)
 
-random_matrix_of_numbers(2)
-random_matrix_of_matrix(2, 2)
