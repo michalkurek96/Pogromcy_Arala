@@ -1,6 +1,6 @@
 import numpy as np
 import random 
-def get_random(n):
+def random_matrix_of_numbers(n):
     a = []
     max_number = 20
     for i in range (n):
@@ -10,4 +10,7 @@ def get_random(n):
         a.append(temp)
     print(a)
 
-get_random(2)
+def random_matrix_of_matrix(n):
+    
+
+random_matrix_of_numbers(2)
