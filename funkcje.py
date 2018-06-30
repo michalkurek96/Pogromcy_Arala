@@ -67,7 +67,7 @@ def RK_sprListaPozioma(listaList):
 	while(i<size and czy_zno):
 		suma=0
 		while(j<size):
-			suma=suma+macierz[i][j]		# kolejnosc [numer wiersza][numer kolumny]
+			suma=suma+listaList[i][j]		# kolejnosc [numer wiersza][numer kolumny]
 			j=j+1	# nie wiem czy dziala j++
 		if(suma-1>RK_epsilon):
 			czy_zno=0
