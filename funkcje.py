@@ -78,7 +78,7 @@ def RK_sprListaPozioma(listaList):
 import random 
 def random_matrix_of_numbers(n):
     matrix = []
-    max_number = 20
+    max_number = 200
     for i in range (n):
         temp = []
         for j in range (n):
@@ -130,4 +130,3 @@ def WypiszWektorSum(MacierzLiczb, WymiarN, CzyWiersz: bool):
 			for Ix2 in range(0,WymiarN):
 				Suma+=MacierzLiczb[Ix1][Ix2]
 			print(Suma)
->>>>>>> d11f387d520a758134c39f32ad67d1bb696a5ec2

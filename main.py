@@ -1,14 +1,20 @@
 import funkcje as f
 
-N = 4
+N = 100
 matrix = f.random_matrix_of_numbers(N)
+#for i in range (N):
+    #print(matrix[i])
 for n in range (255):
+    print('n=', n)
     if(f.RK_sprListaPozioma(matrix)==1):
         if(f.RK_sprListaPozioma(matrix)==1):
             break
     if(n%2==0):
-        f.normalizacja(matrix, N, true)
+        f.Normalizacja(matrix, N, True)
     else:
-        f.normalizacja(matrix, N, false)
+        f.Normalizacja(matrix, N, False)
 
-print(matrix)
+#for i in range (N):
+    #print(matrix[i])
+#f.WypiszWektorSum(matrix, N, True)
+#f.WypiszWektorSum(matrix, N, False)
